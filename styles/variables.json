@@ -3,11 +3,13 @@
     "color_white": "#f0ead6",
     "button": {
         "backgroundColor" : "#E53935",
-        "height": "100%",
         "width": "100px",
+        "height": "100px",
         "display": "flex",
         "justifyContent":"center",
         "alignItems": "center",
-        "padding": "10px"
+        "padding": "10px",
+        "margin": "10px",
+        "borderRadius": "5px"
     }
 }

@@ -9,10 +9,11 @@ export default function StartScreen(){
     return(
         <View>
             <TouchableOpacity
-            style={styleVariables.button}
+            style={{...styleVariables.button, height: "100%"}}
             onPress={()=>setIsPlaying(true)}>
                 <Text>Start</Text>
             </TouchableOpacity>
         </View>
     )
 }
+
