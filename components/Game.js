@@ -1,11 +1,15 @@
 import React from 'react'
-import {Text, View} from 'react-native'
+import {View} from 'react-native'
 import Controller from './Controller'
+import GameScreen from './GameScreen'
+import Score from './Score'
 
 
 export default function Game(){
     return(
-        <View>
+        <View style={{display: 'flex'}}>
+            <Score />
+            <GameScreen />
             <Controller />
         </View>
     )

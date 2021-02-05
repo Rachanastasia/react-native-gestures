@@ -16,10 +16,10 @@ export default function GameWrapper(){
 
 const styles = StyleSheet.create({
     wrapper: {
+        backgroundColor: "black",
         display: "flex",
         height: "100vh",
         width: "100vw",
-        justifyContent: "center",
         alignItems: "center"
     }
 })

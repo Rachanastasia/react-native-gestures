@@ -1,19 +1,16 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
-import UpButton from './UpButton'
-import DownButton from './DownButton'
-import LeftButton from './LeftButton'
-import RightButton from './RightButton'
+import ControllerButton from './ControllerButton'
 
 export default function Controller(){
     return(
         <View style={styles.controller}>
-            <UpButton />
+            <ControllerButton type='Up' />
             <View style={styles.leftRightWrapper}>
-                <DownButton />
-                <LeftButton/>
+                <ControllerButton type='Right' />
+                <ControllerButton type='Left'/>
             </View>
-            <RightButton />
+            <ControllerButton type='Down' />
         </View>
     )
 }

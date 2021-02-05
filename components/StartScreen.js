@@ -8,6 +8,7 @@ export default function StartScreen(){
     const {setIsPlaying} = useContext(GameContext)
     return(
         <View>
+            <Text>This is where I will put the instructions</Text>
             <TouchableOpacity
             style={{...styleVariables.button, height: "100%"}}
             onPress={()=>setIsPlaying(true)}>
