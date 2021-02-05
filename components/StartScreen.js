@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
-import {View, StyleSheet, TouchableOpacity, Text} from 'react-native'
+import {View, TouchableOpacity, Text} from 'react-native'
 import {GameContext} from '../contexts/GameContext'
+import styleVariables from '../styles/variables.json'
 
 
 export default function StartScreen(){
@@ -8,6 +9,7 @@ export default function StartScreen(){
     return(
         <View>
             <TouchableOpacity
+            style={styleVariables.button}
             onPress={()=>setIsPlaying(true)}>
                 <Text>Start</Text>
             </TouchableOpacity>
