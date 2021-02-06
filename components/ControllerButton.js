@@ -5,11 +5,11 @@ import styleVariables from '../styles/variables.json'
 
 
 
-export default function ControllerButton({rotate, color}){
+export default function ControllerButton({icon, color}){
 
 return(
     <TouchableOpacity style={{...styleVariables.button, backgroundColor: color }}>
-        <Text style={{fontSize: 70, color: 'white', transform:[{rotate: `${rotate}deg`}]}}>➡</Text>
+        <Text style={{fontSize: 70, color: 'white'}}>{icon}</Text>
     </TouchableOpacity>
 )
 }

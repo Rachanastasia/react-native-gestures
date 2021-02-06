@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react'
-import {View} from 'react-native'
+import {View, FlatList} from 'react-native'
 import {GameContext} from '../contexts/GameContext'
 import {useGenerateArrows} from '../hooks/hooks'
 import Arrow from './Arrow'
@@ -11,10 +11,14 @@ const {elements} = useContext(GameContext)
 useGenerateArrows()
 
 useEffect(()=>{},[elements])
+const renderItem = ({item}) => <Arrow color={item.color} icon={item.icon}/>
 
 return(
     <View style={{height: '50%', overflow: 'hidden'}}>
-        {elements.length ? elements.map(el => <Arrow {...el} />): null}
+       <FlatList 
+        data={elements} 
+        renderItem={renderItem} 
+        keyExtractor={(i, index) => index}/>
     </View>
 )
 }
