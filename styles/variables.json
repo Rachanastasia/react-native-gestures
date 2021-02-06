@@ -1,6 +1,14 @@
 {
     "color_accent": "#E53935",
     "color_white": "#f0ead6",
+    "color_one_light": "#81d4fa",
+    "color_one_dark": "#03569b",
+    "color_two_light": "#faa781",
+    "color_two_dark": "#b13500",
+    "color_three_light": "#81fae4",
+    "color_three_dark": "#08906d",
+    "color_four_light": "#fa81d4",
+    "color_four_dark": "#a50093",
     "button": {
         "backgroundColor" : "#E53935",
         "width": "100px",

@@ -5,14 +5,21 @@ export const GameContext = createContext()
 export default function GameContextProvider({children}){
     const [isPlaying, setIsPlaying] = useState(false)
     const [score, setScore] = useState(0)
+    const [elements, setElements] = useState([])
 
     useEffect(()=>{
-        return ()=> setScore(0)
+        return ()=> {
+            setScore(0)
+            setElements([])
+        }
     },[])
 
     const increaseScore = () => setScore(score + 1)
 
-    const value = {isPlaying, score, increaseScore, setIsPlaying}
+    const pushElements = (el) => setElements([el, ...elements])
+    const popElements = () => setElements(elements.pop())
+
+    const value = {isPlaying, score, increaseScore, setIsPlaying, pushElements, popElements}
     return(
         <GameContext.Provider value={value}>
             {children}
