@@ -1,5 +1,6 @@
 import React from 'react'
 import {View, Text} from 'react-native'
+import styleVariables from '../styles/variables.json'
 
 
 export default function Arrow({type, color, rotate}){
@@ -11,6 +12,6 @@ return(
 )}
 
 Arrow.defaultProps = {
-    color: 'red',
+    color: styleVariables.color_three_light,
     rotate: '0'
 }

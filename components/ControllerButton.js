@@ -3,15 +3,18 @@ import {Text, TouchableOpacity} from 'react-native'
 import styleVariables from '../styles/variables.json'
 
 
-export default function ControllerButton({type}){
+
+
+export default function ControllerButton({rotate, color}){
 
 return(
-    <TouchableOpacity style={styleVariables.button}>
-        <Text style={{color: styleVariables.color_white}}>{type}</Text>
+    <TouchableOpacity style={{...styleVariables.button, backgroundColor: color }}>
+        <Text style={{fontSize: 70, color: 'white', transform:[{rotate: `${rotate}deg`}]}}>➡</Text>
     </TouchableOpacity>
 )
 }
 
 ControllerButton.defaultProps = {
-    type: "Left"
+    rotate: '0',
+    color: styleVariables.color_two_dark
 }

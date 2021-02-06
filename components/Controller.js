@@ -1,16 +1,18 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
 import ControllerButton from './ControllerButton'
+import styleVariables from '../styles/variables.json'
+
 
 export default function Controller(){
     return(
         <View style={styles.controller}>
-            <ControllerButton type='Up' />
+            <ControllerButton rotate={270} color={styleVariables.color_one_dark}  />
             <View style={styles.leftRightWrapper}>
-                <ControllerButton type='Right' />
-                <ControllerButton type='Left'/>
+                <ControllerButton rotate={180} color={styleVariables.color_two_dark} />
+                <ControllerButton rotate={0} color={styleVariables.color_three_dark} />
             </View>
-            <ControllerButton type='Down' />
+            <ControllerButton rotate={90} color={styleVariables.color_four_dark}  />
         </View>
     )
 }

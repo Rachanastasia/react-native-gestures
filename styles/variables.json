@@ -10,13 +10,12 @@
     "color_four_light": "#fa81d4",
     "color_four_dark": "#a50093",
     "button": {
-        "backgroundColor" : "#E53935",
-        "width": "100px",
-        "height": "100px",
+        "backgroundColor" : "#a50093",
+        "width": "80px",
+        "height": "80px",
         "display": "flex",
         "justifyContent":"center",
         "alignItems": "center",
-        "padding": "10px",
         "margin": "10px",
         "borderRadius": "5px"
     }
